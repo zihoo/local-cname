@@ -14,7 +14,7 @@ def readme():
 setup(
     name='local-cname',
     packages=find_packages(),
-    version='0.3',
+    version='0.4',
     description='Helper script to emulate a local CNAME DNS by writing to /etc/hosts',
     long_description=readme(),
     author='henning@jacobs1.de',
