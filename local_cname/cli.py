@@ -26,7 +26,7 @@ def main():
             entries = []
 
             with Action('Resolving {} ..'.format(args.to)):
-                results = socket.getaddrinfo(args.to, 80, type=socket.SOCK_STREAM)
+                results = socket.getaddrinfo(args.to, 80, 0, 0, socket.SOCK_STREAM)
                 for result in results:
                     family, type, proto, canonname, sockaddr = result
                     if family in (socket.AF_INET, socket.AF_INET6):
